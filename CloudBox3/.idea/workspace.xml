@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ba533a84-8016-4f98-b512-9bdf9bd316e8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/client.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/java/com/cloud/CloudBoxClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/java/com/cloud/MainClientGUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/java/com/cloud/fx/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/java/com/cloud/fx/MessagesProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/java/com/cloud/fx/SceneManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/java/com/cloud/fx/components/LabelWithInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/java/com/cloud/fx/controllers/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/java/com/cloud/fx/controllers/MainSceneController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/java/com/cloud/handlers/ClientChannelInboundHandlerAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/java/com/cloud/handlers/ClientMessageDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/java/com/cloud/logger/ClientConsoleLogAppender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/resources/CloudBoxAuth.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/resources/CloudBoxGUI.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/resources/Icons/add.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/resources/Icons/addAll.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/resources/Icons/connect.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/resources/Icons/contacts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/resources/Icons/copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/resources/Icons/delete.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/resources/Icons/directory.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/resources/Icons/export.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/resources/Icons/file.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/resources/Icons/home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/resources/Icons/icon-16x16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/resources/Icons/import.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/resources/Icons/label.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/resources/Icons/load.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/resources/Icons/loadAll.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/resources/Icons/logoff.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/resources/Icons/new.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/resources/Icons/properties.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/resources/Icons/rename.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/resources/Icons/share.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/resources/application.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-box/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/MainDataBase.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/server.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/cloud/server/AuthManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/cloud/server/CloudBoxServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/cloud/server/DatabaseQueriesProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/cloud/server/handlers/ServerMessageDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/cloud/server/handlers/TransferMessageHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/exep/CheckSumException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/exep/IllegalDBStructureException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/exep/IllegalDataException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/exep/IncorrectPathException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/exep/UserSQLException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/handlers/MessageDecodeHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/handlers/TransferMessageEncoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/processors/FileTransferHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/processors/FilesProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/processors/StandardTransference.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/queries/PathContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/queries/StandardJsonQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/queries/StandardQueryCustomDeserializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/queries/json/JsonAuth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/queries/json/JsonConfirm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/queries/json/JsonCreateDir.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/queries/json/JsonDelete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/queries/json/JsonGetFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/queries/json/JsonGetFilesList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/queries/json/JsonRename.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/queries/json/JsonResultAuth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/queries/json/JsonSendFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/queries/json/JsonSimpleMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/utils.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/SecuredFileStorage/api/src/main/java/nirs/api/model/FileInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/SecuredFileStorage/api/src/main/java/nirs/api/model/FileInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/SecuredFileStorage/server/src/main/resources/main.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/SecuredFileStorage/server/src/main/resources/main.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/SecuredFileStorage/server/target/classes/main.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/SecuredFileStorage/server/target/classes/main.properties" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/client/target/" />
+    <ignored path="$PROJECT_DIR$/server/target/" />
+    <ignored path="$PROJECT_DIR$/utils/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/handlers/TransferMessageEncoder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/main/java/com/cloud/server/CloudBoxServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="310">
+              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/src/main/java/com/cloud/server/AuthManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-267">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/client/pom.xml" />
+        <option value="$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/handlers/MessageDecodeHelper.java" />
+        <option value="$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/processors/FilesProcessor.java" />
+        <option value="$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/queries/json/JsonConfirm.java" />
+        <option value="$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/queries/json/JsonResultAuth.java" />
+        <option value="$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/queries/json/JsonSendFile.java" />
+        <option value="$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/queries/json/JsonSimpleMessage.java" />
+        <option value="$PROJECT_DIR$/utils/pom.xml" />
+        <option value="$PROJECT_DIR$/server/pom.xml" />
+        <option value="$PROJECT_DIR$/server/src/main/java/com/cloud/server/CloudBoxServer.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="516" />
+    <option name="y" value="202" />
+    <option name="width" value="1488" />
+    <option name="height" value="1083" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="CloudBox3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CloudBox3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CloudBox3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CloudBox3" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CloudBox3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CloudBox3" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CloudBox3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CloudBox3" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CloudBox3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CloudBox3" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CloudBox3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CloudBox3" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CloudBox3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CloudBox3" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CloudBox3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CloudBox3" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="handlers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CloudBox3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CloudBox3" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CloudBox3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CloudBox3" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CloudBox3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CloudBox3" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CloudBox3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CloudBox3" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CloudBox3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CloudBox3" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CloudBox3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CloudBox3" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="exep" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CloudBox3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CloudBox3" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="handlers" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551563433277" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/utils/src/main/java" />
+      <recent name="$PROJECT_DIR$/server" />
+      <recent name="$PROJECT_DIR$/server/src/main/resources" />
+      <recent name="$PROJECT_DIR$/server/src/main/java" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ba533a84-8016-4f98-b512-9bdf9bd316e8" name="Default Changelist" comment="" />
+      <created>1551562323148</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1551562323148</updated>
+      <workItem from="1551562326210" duration="1211000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1211000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="516" y="202" width="1488" height="1083" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33817428" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/com/cloud/fx/components/LabelWithInfo.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-box/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/exep/CheckSumException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+          <folding>
+            <element signature="e#125#126#0" expanded="true" />
+            <element signature="e#199#200#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/exep/IllegalDataException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/exep/IllegalDBStructureException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#62#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/exep/IncorrectPathException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#32#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/exep/UserSQLException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#62#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/handlers/MessageDecodeHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1266">
+          <caret line="187" column="41" lean-forward="true" selection-start-line="187" selection-start-column="41" selection-end-line="187" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/processors/FilesProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1350">
+          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/processors/FileTransferHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-913">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/processors/StandardTransference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1217">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/queries/json/JsonAuth.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/queries/json/JsonConfirm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-20">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/queries/json/JsonCreateDir.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-58">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/queries/json/JsonDelete.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/queries/json/JsonGetFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/queries/json/JsonGetFilesList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/queries/json/JsonRename.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/queries/json/JsonResultAuth.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/queries/json/JsonSendFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/queries/json/JsonSimpleMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/queries/PathContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/queries/StandardJsonQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/queries/StandardQueryCustomDeserializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-571">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/cloud/server/handlers/ServerMessageDecoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/cloud/server/handlers/TransferMessageHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/cloud/utils/handlers/TransferMessageEncoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-267">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/cloud/server/CloudBoxServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/cloud/server/AuthManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
