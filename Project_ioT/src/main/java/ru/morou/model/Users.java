@@ -12,6 +12,15 @@ public class Users {
     private String password;
     private int role;
 
+    public Users() {
+    }
+
+    public Users(String username, String password, int role) {
+        this.username = username;
+        this.password = password;
+        this.role = role;
+    }
+
 
     public String getId() {
         return id;
