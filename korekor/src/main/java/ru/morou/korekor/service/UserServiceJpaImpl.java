@@ -13,10 +13,7 @@ import ru.morou.korekor.persist.repo.UserRepository;
 import ru.morou.korekor.service.repr.SystemUser;
 
 import javax.transaction.Transactional;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 /**
@@ -51,7 +48,7 @@ public class UserServiceJpaImpl implements UserService {
     public SystemUser findByUserName(String username) {
         User user = userRepository.findOneByUserName(username);
         return new SystemUser(user.getUserName(), user.getPassword(),
-                user.getFirstName(), user.getLastName(), user.getEmail(), user.getRoles());
+                user.getFirstName(), user.getLastName(), user.getEmail(), user.getRoles(), user.getPhoto ());
     }
 
     @Override
@@ -67,6 +64,7 @@ public class UserServiceJpaImpl implements UserService {
         user.setFirstName(systemUser.getFirstName());
         user.setLastName(systemUser.getLastName());
         user.setEmail(systemUser.getEmail());
+        user.setPhoto(systemUser.getPhoto());
         user.setRoles(new HashSet<>(Collections.singletonList(roleRepository.findOneByName("ROLE_CLIENT"))));
         userRepository.save(user);
         return true;

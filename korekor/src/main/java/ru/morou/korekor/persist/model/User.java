@@ -1,8 +1,13 @@
 package ru.morou.korekor.persist.model;
 
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
+
 import javax.persistence.*;
 import javax.validation.constraints.Pattern;
 import java.io.Serializable;
+import java.time.LocalDateTime;
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -27,7 +32,7 @@ public class User implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
+    @Column(name = "id", columnDefinition = "UNSIGNED")
     private Long id;
 
     @Column(name = "username", unique = true, nullable = false)
@@ -74,9 +79,21 @@ public class User implements Serializable {
 //    @Pattern(regexp="[0-9]{2}\\-[0-9]{3}", message="Post code is incorrect (XX-XXX eg. 20-199).")
 //    private String postcode;
 
+    @Lob
+    @Column(name = "photo", nullable = false, columnDefinition="MEDIUMBLOB")
+    private byte[] photo;
+
+    @Column(name = "create_at")
+    @CreationTimestamp
+    private LocalDateTime createAt;
+
+    @Column(name = "update_at")
+    @UpdateTimestamp
+    private LocalDateTime updateAt;
+
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(name = "users_roles",
-            joinColumns = @JoinColumn(name = "user_id"),
+            joinColumns = @JoinColumn(name = "user_id", columnDefinition = "UNSIGNED"),
             inverseJoinColumns = @JoinColumn(name = "role_id"))
     private Set<Role> roles;
 
@@ -84,18 +101,22 @@ public class User implements Serializable {
         this.roles = new HashSet<>();
     }
 
-    public User(String userName, String password, String firstName, String lastName, String email) {
-        this(userName, password, firstName, lastName, email, new HashSet<>());
+    public User(String userName, String password, String firstName, String lastName, String email, byte[] photo, LocalDateTime createAt, LocalDateTime updateAt) {
+        this(userName, password, firstName, lastName, email, photo, createAt, updateAt, new HashSet<>());
     }
 
-    public User(String userName, String password, String firstName, String lastName, String email,
+    public User(String userName, String password, String firstName, String lastName, String email, byte[] photo, LocalDateTime createAt, LocalDateTime updateAt,
                 Set<Role> roles) {
         this.userName = userName;
         this.password = password;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
+        this.photo = photo;
+        this.createAt = createAt;
+        this.updateAt = updateAt;
         this.roles = roles;
+
     }
 
     public Long getId() {
@@ -154,10 +175,43 @@ public class User implements Serializable {
         this.roles = roles;
     }
 
+    public byte[] getPhoto() {
+        return photo;
+    }
+
+    public void setPhoto(byte[] photo) {
+        this.photo = photo;
+    }
+
+    public LocalDateTime getCreateAt() {
+        return createAt;
+    }
+
+    public void setCreateAt(LocalDateTime createAt) {
+        this.createAt = createAt;
+    }
+
+    public LocalDateTime getUpdateAt() {
+        return updateAt;
+    }
+
+    public void setUpdateAt(LocalDateTime updateAt) {
+        this.updateAt = updateAt;
+    }
+
     @Override
     public String toString() {
-        return "User{" + "id=" + id + ", userName='" + userName + '\'' + ", password='" + "*********" + '\''
-                + ", firstName='" + firstName + '\'' + ", lastName='" + lastName + '\'' + ", email='" + email + '\''
-                + ", roles=" + roles + '}';
+        return "User{" +
+                "id=" + id +
+                ", userName='" + userName + '\'' +
+                ", password='" + password + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", email='" + email + '\'' +
+                ", photo=" + Arrays.toString (photo) +
+                ", createAt=" + createAt +
+                ", updateAt=" + updateAt +
+                ", roles=" + roles +
+                '}';
     }
 }
